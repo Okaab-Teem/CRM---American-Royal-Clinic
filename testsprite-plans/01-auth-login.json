@@ -1,0 +1,25 @@
+{
+  "projectId": "70fc0b1e-5a99-407b-a018-900acd62dcd3",
+  "type": "frontend",
+  "name": "User Authentication & Dashboard Redirect",
+  "description": "Verify system administrator can authenticate with credentials and successfully reach the dashboard",
+  "priority": "p0",
+  "planSteps": [
+    {
+      "type": "action",
+      "description": "Navigate to /login"
+    },
+    {
+      "type": "action",
+      "description": "Enter 'admin@flowcrm.local' in the email input and 'FlowAdmin123!' in the password input"
+    },
+    {
+      "type": "action",
+      "description": "Click the 'Sign In' button"
+    },
+    {
+      "type": "assertion",
+      "description": "Verify the URL updates to /dashboard and the KPI cards and user profile 'Flow Admin' are visible"
+    }
+  ]
+}

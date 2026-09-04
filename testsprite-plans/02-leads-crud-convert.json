@@ -1,0 +1,41 @@
+{
+  "projectId": "70fc0b1e-5a99-407b-a018-900acd62dcd3",
+  "type": "frontend",
+  "name": "Leads Directory Full CRUD & Conversion Lifecycle",
+  "description": "Verify lead creation, form validations, search filtering, and conversion into Customer and Opportunity",
+  "priority": "p0",
+  "planSteps": [
+    {
+      "type": "action",
+      "description": "Navigate to /login, sign in with email 'admin@flowcrm.local' and password 'FlowAdmin123!', and navigate to /leads"
+    },
+    {
+      "type": "assertion",
+      "description": "Verify the Leads table loads with company names, status badges, and the 'New Lead' button"
+    },
+    {
+      "type": "action",
+      "description": "Click the 'New Lead' button to open the lead creation form"
+    },
+    {
+      "type": "action",
+      "description": "Fill First Name 'Captain', Last Name 'Tarek', Company Name 'Apex Fitness Club', Email 'tarek@apexfit.example', Phone '+201009988776', and Estimated Value '50000'"
+    },
+    {
+      "type": "action",
+      "description": "Click 'Create Lead' button to submit the form"
+    },
+    {
+      "type": "assertion",
+      "description": "Assert redirected to lead details page with company name 'Apex Fitness Club', status badge, and action buttons"
+    },
+    {
+      "type": "action",
+      "description": "Click 'Convert' button to convert the lead into a customer and deal"
+    },
+    {
+      "type": "assertion",
+      "description": "Assert lead conversion completes and redirects to the Customer 360 page"
+    }
+  ]
+}

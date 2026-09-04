@@ -1,0 +1,25 @@
+{
+  "projectId": "70fc0b1e-5a99-407b-a018-900acd62dcd3",
+  "type": "frontend",
+  "name": "Customer 360 Accounts & Contacts",
+  "description": "Verify customer accounts directory displays clients, contact information, and account details",
+  "priority": "p1",
+  "planSteps": [
+    {
+      "type": "action",
+      "description": "Sign in as admin@flowcrm.local and navigate to /customers"
+    },
+    {
+      "type": "assertion",
+      "description": "Verify customer accounts table lists company names, industry, owner, and status badges"
+    },
+    {
+      "type": "action",
+      "description": "Click on a customer to open their Customer 360 overview"
+    },
+    {
+      "type": "assertion",
+      "description": "Verify company details, contacts, and activity stream are displayed"
+    }
+  ]
+}

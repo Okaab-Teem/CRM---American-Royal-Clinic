@@ -1,0 +1,41 @@
+{
+  "projectId": "70fc0b1e-5a99-407b-a018-900acd62dcd3",
+  "type": "frontend",
+  "name": "Enterprise B2B Kanban Board Deals & Interactive Controls",
+  "description": "Verify HubSpot-grade Kanban board with financial KPI ribbon, + New Deal creation, stages, and interactive filters",
+  "priority": "p0",
+  "planSteps": [
+    {
+      "type": "action",
+      "description": "Navigate to /login, sign in as admin@flowcrm.local with password 'FlowAdmin123!', and navigate to /pipeline"
+    },
+    {
+      "type": "assertion",
+      "description": "Verify the Financial Aggregate Ribbon renders Total Pipeline value, Weighted Forecast, Open Deals count, and Win Rate percentage"
+    },
+    {
+      "type": "assertion",
+      "description": "Verify 5 Kanban stage columns are present: Discovery & Qualified, Technical Evaluation, Proposal & Quote, Contract Negotiation, and Closed Won"
+    },
+    {
+      "type": "action",
+      "description": "Click '+ New Deal' button in the top header"
+    },
+    {
+      "type": "action",
+      "description": "Fill Deal Title '100 Tubs Whey Isolate Wholesale Order', Amount '85000', select Stage 'Proposal & Quote', and click 'Create Deal'"
+    },
+    {
+      "type": "assertion",
+      "description": "Assert modal closes and new deal card appears in the 'Proposal & Quote' column"
+    },
+    {
+      "type": "action",
+      "description": "Click quick filter chip 'Hot Deals'"
+    },
+    {
+      "type": "assertion",
+      "description": "Verify board displays matching deal cards according to active filter"
+    }
+  ]
+}

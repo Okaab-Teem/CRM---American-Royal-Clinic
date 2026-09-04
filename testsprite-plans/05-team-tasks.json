@@ -1,0 +1,25 @@
+{
+  "projectId": "70fc0b1e-5a99-407b-a018-900acd62dcd3",
+  "type": "frontend",
+  "name": "Team Tasks & Operational Workflows",
+  "description": "Verify tasks workspace lists action items, priorities, assignees, and completion actions",
+  "priority": "p2",
+  "planSteps": [
+    {
+      "type": "action",
+      "description": "Sign in as admin@flowcrm.local and navigate to /tasks"
+    },
+    {
+      "type": "assertion",
+      "description": "Verify task list renders with title, priority pill badges (High, Medium, Low), due date, and assigned user"
+    },
+    {
+      "type": "action",
+      "description": "Filter or search tasks by status"
+    },
+    {
+      "type": "assertion",
+      "description": "Verify the tasks list filters accordingly"
+    }
+  ]
+}

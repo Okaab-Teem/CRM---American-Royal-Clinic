@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/FlowCRM.Api/FlowCRM.Api.csproj" />
+    <Project Path="src/FlowCRM.Application/FlowCRM.Application.csproj" />
+    <Project Path="src/FlowCRM.Domain/FlowCRM.Domain.csproj" />
+    <Project Path="src/FlowCRM.Infrastructure/FlowCRM.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/FlowCRM.Tests/FlowCRM.Tests.csproj" />
+  </Folder>
+</Solution>

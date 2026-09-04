@@ -1,0 +1,33 @@
+{
+  "projectId": "70fc0b1e-5a99-407b-a018-900acd62dcd3",
+  "type": "frontend",
+  "name": "User Authentication & Dashboard Analytics",
+  "description": "Verify complete authentication cycle, dashboard KPI ribbons, sales pipeline charts, and task widgets",
+  "priority": "p0",
+  "planSteps": [
+    {
+      "type": "action",
+      "description": "Navigate to /login"
+    },
+    {
+      "type": "assertion",
+      "description": "Verify email input, password input, and Sign In button are visible on the login card"
+    },
+    {
+      "type": "action",
+      "description": "Enter 'admin@flowcrm.local' into email input, 'FlowAdmin123!' into password input, and click Sign In"
+    },
+    {
+      "type": "assertion",
+      "description": "Assert successful login redirects to /dashboard with user badge 'Flow Admin' and role 'Admin'"
+    },
+    {
+      "type": "assertion",
+      "description": "Verify top dashboard KPI ribbon cards render: Total Leads, Active Opportunities, Pipeline Value, Won Revenue, and Tasks Due Today"
+    },
+    {
+      "type": "assertion",
+      "description": "Verify Dashboard panels render: Sales Pipeline, Leads by Source, Revenue chart, and My Tasks"
+    }
+  ]
+}

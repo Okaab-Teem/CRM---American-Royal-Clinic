@@ -1,0 +1,33 @@
+{
+  "projectId": "70fc0b1e-5a99-407b-a018-900acd62dcd3",
+  "type": "frontend",
+  "name": "Reports Analytics & User Administration",
+  "description": "Verify reports page charts, user administration roster, and session logout",
+  "priority": "p0",
+  "planSteps": [
+    {
+      "type": "action",
+      "description": "Navigate to /login, sign in as admin@flowcrm.local with password 'FlowAdmin123!', and navigate to /reports"
+    },
+    {
+      "type": "assertion",
+      "description": "Verify revenue charts, deal conversion metrics, and sales representative performance leaderboard render"
+    },
+    {
+      "type": "action",
+      "description": "Click 'Users' in the navigation menu to navigate to /users"
+    },
+    {
+      "type": "assertion",
+      "description": "Verify Users directory lists team members: Flow Admin (Admin), Mariam Saleh (Manager), Sara Ahmed (Sales Rep), Omar Hassan (Sales Rep)"
+    },
+    {
+      "type": "action",
+      "description": "Click user profile / Sign Out button in the navigation header"
+    },
+    {
+      "type": "assertion",
+      "description": "Verify session terminates and user is redirected back to /login"
+    }
+  ]
+}

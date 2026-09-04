@@ -1,0 +1,33 @@
+{
+  "projectId": "70fc0b1e-5a99-407b-a018-900acd62dcd3",
+  "type": "frontend",
+  "name": "Customer 360 Full CRUD & Activity Timeline",
+  "description": "Verify customer accounts directory, Customer 360 overview, stats, company info, and activity timeline",
+  "priority": "p0",
+  "planSteps": [
+    {
+      "type": "action",
+      "description": "Navigate to /login, sign in as admin@flowcrm.local with password 'FlowAdmin123!', and navigate to /customers"
+    },
+    {
+      "type": "assertion",
+      "description": "Verify Customer accounts table displays company name, industry, phone, email, and owner"
+    },
+    {
+      "type": "action",
+      "description": "Click the first customer in the table to open Customer 360 details view (/customers/:id)"
+    },
+    {
+      "type": "assertion",
+      "description": "Assert Customer 360 view displays stats: Open Opportunities, Pending Tasks, Total Deals, and Last Activity"
+    },
+    {
+      "type": "assertion",
+      "description": "Assert Company Information panel renders company name, industry, email, and address"
+    },
+    {
+      "type": "assertion",
+      "description": "Assert Open Opportunities and Timeline panels are displayed"
+    }
+  ]
+}

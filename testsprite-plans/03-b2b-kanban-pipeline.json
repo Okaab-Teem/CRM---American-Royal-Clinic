@@ -1,0 +1,33 @@
+{
+  "projectId": "70fc0b1e-5a99-407b-a018-900acd62dcd3",
+  "type": "frontend",
+  "name": "B2B Sales Pipeline Kanban Board",
+  "description": "Verify the enterprise Kanban board displays 5 stage columns, financial aggregate ribbon, deal cards, and quick filters",
+  "priority": "p0",
+  "planSteps": [
+    {
+      "type": "action",
+      "description": "Sign in as admin@flowcrm.local and navigate to /pipeline"
+    },
+    {
+      "type": "assertion",
+      "description": "Verify the Financial Aggregate Ribbon displays Total Pipeline, Weighted Forecast, Open Deals, and Win Rate KPI cards"
+    },
+    {
+      "type": "assertion",
+      "description": "Verify the 5 stages are rendered: 'Discovery & Qualified', 'Technical Evaluation', 'Proposal & Quote', 'Contract Negotiation', and 'Closed Won'"
+    },
+    {
+      "type": "assertion",
+      "description": "Verify enterprise deal cards are visible with deal title, uppercase company name, formatted amount, priority badge, and activity pill"
+    },
+    {
+      "type": "action",
+      "description": "Click '+ New Deal' to open the creation modal"
+    },
+    {
+      "type": "assertion",
+      "description": "Verify the 'Create New Deal' modal dialog is displayed with input fields"
+    }
+  ]
+}

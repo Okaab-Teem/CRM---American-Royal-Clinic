@@ -1,0 +1,29 @@
+{
+  "projectId": "70fc0b1e-5a99-407b-a018-900acd62dcd3",
+  "type": "frontend",
+  "name": "Leads Directory & Search Filtering",
+  "description": "Verify lead management directory lists leads with source, status, assigned owner, and supports search",
+  "priority": "p1",
+  "planSteps": [
+    {
+      "type": "action",
+      "description": "Navigate to /login and sign in as admin@flowcrm.local"
+    },
+    {
+      "type": "action",
+      "description": "Click 'Leads' in the sidebar navigation to open /leads"
+    },
+    {
+      "type": "assertion",
+      "description": "Verify the Leads table loads with company names, status badges, and the 'New Lead' button"
+    },
+    {
+      "type": "action",
+      "description": "Click into a lead to view their details page"
+    },
+    {
+      "type": "assertion",
+      "description": "Verify the lead details view displays company, email, phone, and action buttons"
+    }
+  ]
+}

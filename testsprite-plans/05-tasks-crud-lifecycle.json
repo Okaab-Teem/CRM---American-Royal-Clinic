@@ -1,0 +1,45 @@
+{
+  "projectId": "70fc0b1e-5a99-407b-a018-900acd62dcd3",
+  "type": "frontend",
+  "name": "Team Tasks Full CRUD & Completion Lifecycle",
+  "description": "Verify team task management directory, new task modal creation, priority filtering, and task completion toggle",
+  "priority": "p0",
+  "planSteps": [
+    {
+      "type": "action",
+      "description": "Navigate to /login, sign in as admin@flowcrm.local with password 'FlowAdmin123!', and navigate to /tasks"
+    },
+    {
+      "type": "assertion",
+      "description": "Verify Task list table loads with task title, due date, priority badge, assignee, and '+ New Task' button"
+    },
+    {
+      "type": "action",
+      "description": "Click '+ New Task' button to open task creation dialog"
+    },
+    {
+      "type": "action",
+      "description": "Fill Title 'Whey Protein 30-Day Re-Order Follow-up', select Priority 'High', and click 'Create Task' or 'Save'"
+    },
+    {
+      "type": "assertion",
+      "description": "Assert new task appears in the task list with High priority badge"
+    },
+    {
+      "type": "action",
+      "description": "Click filter pill 'Pending' then 'Completed'"
+    },
+    {
+      "type": "assertion",
+      "description": "Verify tasks are filtered according to the selected status"
+    },
+    {
+      "type": "action",
+      "description": "Click the checkbox or complete button on a task"
+    },
+    {
+      "type": "assertion",
+      "description": "Verify the task state updates to Completed"
+    }
+  ]
+}
